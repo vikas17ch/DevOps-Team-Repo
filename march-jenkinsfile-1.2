@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy Application Code'
+                sh 'sudo /var/lib/jenkins/workspace/March-jenkins-1.2/target/web.war /root/apache-tomcat-8.5.87/webapps'
             }
         }
     }
