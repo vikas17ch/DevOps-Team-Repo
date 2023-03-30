@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy Application Code'
+                sh 'cp web.war /root/apache-tomcat-8.5.87/webapps'
             }
         }
     }
