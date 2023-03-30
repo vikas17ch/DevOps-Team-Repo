@@ -10,6 +10,11 @@ pipeline {
                 git 'https://github.com/ramdevops03/Development-Team-Repo.git'
             }
         }
+       stage('Clean') {
+            steps {
+                sh 'mvn clean -f pom.xml'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'mvn package -f pom.xml'
