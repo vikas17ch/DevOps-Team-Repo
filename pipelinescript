@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git 'https://github.com/ramdevops03/Development-Team-Repo.git'
+                git 'https://github.com/vikas17ch/Development-Team-Repo.git'
             }
         }
         stage('Build Application Code') {
